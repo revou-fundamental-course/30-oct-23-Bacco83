@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<body style="background-image: url(img/bgl.jpg); background-size: cover;">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="container">
+                <a href="" class="navbar-brand">Kalkulator<b>BMI</b></a>
+            </div>
+        </div>
+    </nav>
+    <div class="col-md-3"></div>
+    <div class="col-md-6 well">
+        <h3 class="text-primary"><b>BMI</b> Body Mass Index <small>Indeks Masa Tubuh</small></h3>
+        <hr style="border-top: 1px dotted #ccc;" />
+        <form>
+            <div class="container">
+                <div class="form-inline">
+                    <div class="row">
+                        <label for="gender">Jenis Kelamin:</label>
+                        <select class="form-control" id="gender">
+                            <option value="male">Pria</option>
+                            <option value="female">Wanita</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-inline">
+                    <div class="row">
+                        <label for="weight">Berat Badan (kg):</label>
+                    </div>
+                    <div class="row">
+                        <input type="text" placeholder="Masukkan berat badan" class="form-control" id="weight">
+                    </div>
+                </div>
+                <div class="form-inline">
+                    <div class="row">
+                        <label for="height">Tinggi Badan (cm):</label>
+                    </div>
+                    <div class="row">
+                        <input type="text" placeholder="Masukkan tinggi badan" class="form-control" id="height">
+                    </div>
+
+                </div>
+                <br />
+                <div class="row">
+                    <button class="btn btn-primary" type="button" onClick="calculateBmi()">HITUNG</button>
+                </div>
+                <br /><br />
+                <div class="form-inline">
+                    <div class="row">
+                        <label for="bmi">BMI:</label>
+                    </div>
+                    <div class="row">
+                        <input class="form-control" type="text" id="bmi" size="28" readonly>
+                    </div>
+                </div>
+                <br />
+                <div class="form-inline">
+                    <div class="row">
+                        <label for="result">Hasil:</label>
+                    </div>
+                    <div class="row">
+                        <input class="form-control" type="text" id="result" size="28" readonly>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <button class="btn btn-danger" type="reset">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
